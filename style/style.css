@@ -163,22 +163,25 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .player,
+    .player {
+        flex-direction: column;
+    }
+
     .blog,
     .course {
         flex-direction: column;
-    }
-}
-
-/* tablet divices */
-@media only screen and (min-width: 668px) and (max-width: 992px) {
-    .container {
-        width: 100%;
+        padding-left: 60px;
     }
 
-    .players,
-    .blogs,
-    .courses {
-        grid-template-columns: repeat(2, 1fr);
+    /* tablet divices */
+    @media only screen and (min-width: 668px) and (max-width: 992px) {
+        .container {
+            width: 100%;
+        }
+
+        .players,
+        .blogs,
+        .courses {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-}
